@@ -1,0 +1,27 @@
+GET http://localhost:8000/tasks/list
+
+###
+
+POST http://localhost:8000/tasks/create
+Content-Type: application/json
+
+{
+    "title": "Task awaiting deletion"
+}
+
+###
+
+PUT http://localhost:8000/tasks/61217813f6364c0b8c867dc8
+Content-Type: application/json
+
+{
+    "title": "This is a modified task"
+}
+
+###
+
+DELETE http://localhost:8000/tasks/61217845f6364c0b8c867dce
+
+###
+
+GET http://localhost:8000/documentation/
